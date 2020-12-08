@@ -1,2 +1,2 @@
 # Alouka_piercing
-Fully automated website deployment and provisionning for the webpage of "Alouka Piercing La rochelle" 
+github pages for the static hosting of "Alouka Piercing La rochelle" 
