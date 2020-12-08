@@ -25,4 +25,8 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: git pull && git checkout gh-pages && git checkout master src/ && mv src/* ./ && rm -rf src/ && git commit "" && git push -f
+        run: |
+          git pull
+          git checkout gh-pages
+          git checkout master src/ && mv src/* ./ && rm -rf src/
+          git add . &&  git commit "triggered by ci" && git push -f
