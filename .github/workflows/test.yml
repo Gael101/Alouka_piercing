@@ -27,7 +27,7 @@ jobs:
       - name: Run a one-line script
         run: |
           git config --global user.name "Gael"
-          git config --gloal user.email "spambox@spam.com"
+          git config --global user.email "spambox@spam.com"
           git pull
           git checkout gh-pages
           git checkout master src/ && mv src/* ./ && rm -rf src/
