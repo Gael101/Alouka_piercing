@@ -29,4 +29,4 @@ jobs:
           git pull
           git checkout gh-pages
           git checkout master src/ && mv src/* ./ && rm -rf src/
-          git add . &&  git commit "triggered by ci" && git push -f
+          git add . &&  git commit -m "triggered by ci" && git push -f
