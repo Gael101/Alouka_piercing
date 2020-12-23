@@ -29,6 +29,6 @@ jobs:
           git config --global user.name "Gael"
           git config --global user.email "spambox@spam.com"
           git pull
-          git checkout gh-pages
+          git checkout gh-pages && rm -rf ./* 
           git checkout master src/ && cp -R src/* ./ && rm -rf src/
           git add . &&  git commit -m "triggered by ci" && git push -f
